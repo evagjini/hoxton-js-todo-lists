@@ -5,7 +5,7 @@
 
 
 
-let message = " ";
+let message = ""
 
 for ( let user of users){
     message+= 
