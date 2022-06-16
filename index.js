@@ -5,7 +5,7 @@
 
 
 
-let message = " Hello:"
+let message = " ";
 
 for ( let user of users){
     message+= 
@@ -14,15 +14,21 @@ for ( let user of users){
 
 alert(message)
 
-let userId = Number(prompt("What is your id?"))
- 
-let content = ""
- for (let user of todos){
- content+=
- `${users.username} with ${todos.title}`
+let id = Number(prompt("What is your id?"))
+console.log(id)
 
+ for( user of users){
+    if (id === user.id) 
+    console.log("This is:"  + user.username)
  }
-alert(content)
+
+
+for ( todo of todos){
+    if( id === todo.userId)
+    console.log(todo.title);
+}
+//  }
+// alert(content)
 // console.log(todo)
 
 // alert(todo)
